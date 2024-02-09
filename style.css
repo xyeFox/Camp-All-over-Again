@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0e10;
+    overflow: hidden;
+}
+
+/* [I'll deal with this later.] */
+/*
+:root {
+
+}
+*/
+
+/* [TEXT EDITOR] */
+h1 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+
+    color: #BDC1D7;
+}
+
+p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+
+    color: #8588A4;
+}
+
+/* BTN TEXT */
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #CBD3E3;
+}
+
+.btnPar {
+    font-size: 16px;
+    color: #CBD3E3;
+
+    transform: translateY(-3px);
+    padding: 14px;
+    text-align: center;
+}
+/* BTN TEXT */
+
+.highlight {
+    color: #9c9fc2;
+}
+
+/* [TEXT EDITOR] */
+
+/* [DESIGN EDITOR] */
+/* Hides completely */
+.hide {
+    visibility: hidden;
+}
+
+/* Makes invisible for animating */
+.hidden {
+    opacity: 0%
+}
+.storyPanel {
+    height: 100vh;
+}
+
+.pageBox {
+    background-color: #171719;
+    border-radius: 65px;
+    color: white;
+
+    transform: translateY(80px);
+    margin: auto;
+    width: 1280px;
+    height: 832px;
+    
+    display: flex;
+}
+
+.pageMargins {
+    border: 15px solid #686C7F;
+    border-radius: 50px;
+    
+    margin: auto;
+    width: 1244px;
+    height: 794px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*
+    align-content: center;
+    flex-direction: column;
+    */
+}
+
+/* Center of Page */
+.Center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    transform: translateY(-40px);
+}
+
+/* Transform position the Center items */
+.moveUpInteractive {
+    transform: translatey(-90px);
+}
+
+.moveUpGIFS {
+    transform: translateY(-65px);
+}
+
+.textBox {
+    background-color: #282A36;
+    border-radius: 34px;
+
+    padding: 12px 25px;
+    width: 560px;
+    height: 313px;
+}
+
+.button {
+    background-color: #24242D;
+    border-radius: 16px;
+
+    margin-top: 19px;
+    width: 560px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.moveUpBTNText {
+    transform: translateY(-35px);
+}
+
+.hoverIMGL {
+    transform: translate3d(15px,-5px, 0);
+    opacity: 0%;
+}
+
+.hoverIMGR {
+    transform: translate3d(-15px,-5px, 0);
+    opacity: 0%;
+}
+/* [DESIGN EDITOR] */
+
+/* [KEYFRAMING] */ 
+@keyframes buttonHoverLEFT {
+    0% {transform: translate3d(15px, -5px, 0); opacity: 0%;}
+    100% {transform: translate3d(45px, -5px, 0); opacity: 100%;}
+}
+@keyframes buttonHoverRIGHT {
+    0% {transform: translate3d(-15px, -5px, 0); opacity: 0%;}
+    100% {transform: translate3d(-45px, -5px, 0); opacity: 100%;}
+}
+@keyframes textBrighten {
+    0% {color: #bfc8db}
+    100% {color: #EEF1F6}
+}
+@keyframes boxBrighten {
+    0% {background-color: #24242D;}
+    100% {background-color: #303043;}
+}
+@keyframes fadeINLeft {
+    0% {transform: translate3d(-15px, 0, 0); opacity: 0%;}
+    100% {transform: translate3d(0px, 0, 0); opacity: 100%;}
+}
+@keyframes buttonfadeINLeft {
+    0% {transform: translate3d(-15px, -90px, 0); opacity: 0%;}
+    100% {transform: translate3d(0px, -90px, 0); opacity: 100%;}
+}
+@keyframes btnTextFadeINLeft {
+    0% {transform: translate3d(-15px, -4px, 0); opacity: 0%;}
+    100% {transform: translate3d(0px, -4px, 0); opacity: 100%;}
+}/*
+@keyframes buttonRed {
+    0% {background-color: #24242D;}
+    
+    25% {background-color: rgb(66, 45, 49);}
+    45.5% {background-color: #a14550;}
+    46% {background-color: rgb(24, 23, 24);}
+
+    51% {background-color: rgb(24, 23, 24);}
+    51.5% {background-color: #ddda5a;}
+    52% {background-color: rgb(149, 97, 232);}
+    54% {background-color: rgb(24, 23, 24);}
+    54.5% {background-color: #d62f56;}
+    55% {background-color: rgb(55, 49, 55);}
+
+    90% {background-color: #3e1720;}
+
+    100% {background-color: #24242D;}
+}*/
+@keyframes buttonRed {
+    0% {background-color: #24242D;}
+    
+    80% {background-color: #3e1720;}
+    81% {background-color: #6c1616;}
+    86% {background-color: #3e1720;}
+
+    90% {background-color: #3e1720;}
+    91% {background-color: #6c1616;}
+    96% {background-color: #3e1720;}
+
+    100% {background-color: #24242D;}
+}
+@keyframes buttonRed2 {
+    0% {background-color: #24242D;}
+    
+    25% {background-color: rgb(70, 39, 45);}
+
+    35% {background-color: #791414;}
+    38% {background-color: rgb(29, 9, 9);}
+    55% {background-color: #280e14;}
+    55% {background-color: #791414;}
+    58% {background-color: rgb(29, 9, 9);}
+    60% {background-color: #280e14;}
+
+    100% {background-color: #24242D;}
+}
+@keyframes nightmareEvent {
+    0% {background-color: #282A36;}
+    25% {background-color: #2f1616;}
+    26% {background-color: #6f1515;}
+    45% {background-color: #241215;}
+    100% {background-color: #282A36;}
+}
+/* [KEYFRAMING] */
+
+/* [FRAME TRIGGERS] */ 
+a:hover p{
+    animation-name: textBrighten;
+    animation-duration: 0.65s;
+    animation-fill-mode: forwards;
+}
+
+a:hover .hoverIMGL {
+    animation-name: buttonHoverLEFT;
+    animation-duration: 0.65s;
+    animation-fill-mode: forwards;
+}
+a:hover .hoverIMGR{
+    animation-name: buttonHoverRIGHT;
+    animation-duration: 0.65s;
+    animation-fill-mode: forwards;
+}
+
+a:hover .button {
+    animation-name: boxBrighten;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+a:hover .fake {
+    animation-name: buttonRed;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+a:hover .fake2 {
+    animation-name: buttonRed2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+a:hover .hidden {
+    opacity: 100%;
+}
+/* ACTIVE TRIGGERS */
+.pageBox.active h1 {
+    animation-name: fadeINLeft;
+    animation-duration: 0.65s;
+    animation-fill-mode: forwards;
+}
+
+.pageBox.active .textBox p {
+    animation-name: fadeINLeft;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.pageBox.active .btnGroup{
+    animation-name: buttonfadeINLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.pageBox.active .btnPar{
+    animation-name: btnTextFadeINLeft;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.pageBox.active .nightmare {
+    animation-name: nightmareEvent;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+/* [FRAME TRIGGERS] */
